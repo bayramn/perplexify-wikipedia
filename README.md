@@ -15,10 +15,14 @@
 1. Open Chrome and navigate to `chrome://extensions/`.
 2. Toggle **Developer Mode** on (top-right corner).
 
+### 1. Enable Developer Mode in Brave
+1. Open Brave and navigate to `brave://extensions/`.
+2. Toggle **Developer Mode** on (top-right corner).
+
 ### 2. Load the Extension
 1. Clone this repository or download the source as a ZIP.
 2. Extract the ZIP and locate the `dist` folder.
-3. In Chrome, click **Load unpacked** and select the `dist` folder.
+3. In Chrome/Brave, click **Load unpacked** and select the `dist` folder.
 
 ---
 
