@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "WikiPlex",
+  "description": "AI article generator for Wikipedia",
+  "version": "1.0.0",
+  "action": {
+    "default_icon": {
+      "16": "assets/wikiplex-icon-16.png",
+      "48": "assets/wikiplex-icon-48.png",
+      "128": "assets/wikiplex-icon-128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Open"
+  },
+  "host_permissions": ["https://*.wikipedia.org/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+   "16": "assets/wikiplex-icon-16.png",
+    "48": "assets/wikiplex-icon-48.png",
+    "128": "assets/wikiplex-icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*"],
+      "js": ["content.js"],
+      "all_frames": false,
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/reply-solid.svg",
+        "assets/reply.svg",
+        "assets/mail-brief-icon.png"
+
+      ],
+      "matches": ["https://mail.google.com/*"]
+    }
+  ], 
+    "permissions": [
+    "tabs","activeTab", "scripting", "storage"
+  ] 
+}

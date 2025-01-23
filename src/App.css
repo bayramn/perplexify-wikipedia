@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* height: -webkit-fill-available; */
+}
+.container {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  width: 250px;
+  color: #314d3e;
+  padding: 0.5em;
+  padding-top: 1em;
+  margin-top: 3em;
+  min-height: 300px;
+
+  /* border-radius: 15px;
+  border: 1px solid red; */
+}
+
+.main {
+  min-height: 280px;
+  /* border: 1px solid red; */
+}
+.home {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home h2 { 
+  margin-bottom: 1em;
+}
+.home p {
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+
+}
+
+.home button {
+  border: none;
+  border-radius: 15px;
+  margin-top: 1em;
+  padding: 0.2em 0.4em;
+  background: #4e6373;
+  background: rgb(31, 128, 141);
+  cursor: pointer;
+  color: #fff;
+}
+.home button:hover {
+  background: rgba(31, 128, 141, 0.8);
+}
+
+.home input {
+  width: 100%;
+  /* margin: 1em 0; */
+  padding: 0.5em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.home input[type="text"] {
+  background: #edf2f7;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home input [type="text"]:focus {
+  background-color: rgba(171, 206, 203, 0.3);
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(171, 206, 203, 0.3) inset !important;
+}
+
+.home input [type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+}
+
+.footer {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  background-color: #f2f2f2;
+  /* color: #fff; */
+  /* padding: 1em; */
+  border-top: 0.5px solid #cccbcb;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .5em;
+  border-top: 0.5px solid #cccbcb;
+  margin-top: 1em;
+  bottom: 0;
+}
+.contact div {
+  cursor: pointer;
+}
+.contact img {
+  margin:  0.5em;
+}
