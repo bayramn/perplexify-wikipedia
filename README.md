@@ -20,9 +20,10 @@
 2. Toggle **Developer Mode** on (top-right corner).
 
 ### 2. Load the Extension
-1. Clone this repository or download the source as a ZIP.
+1. Clone this repository or download the source as a ZIP. You can also download CRX file from [google drive](https://drive.google.com/file/d/1anl0kJBio43YjZ81jUuVJJwL1Km3TS4d/view?usp=sharing).
 2. Extract the ZIP and locate the `dist` folder.
-3. In Chrome/Brave, click **Load unpacked** and select the `dist` folder.
+3. In Chrome/Brave, click **Load unpacked** and select the `dist` folder. 
+
 
 ---
 
