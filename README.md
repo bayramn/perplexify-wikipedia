@@ -26,6 +26,23 @@
 
 ---
 
+## How To Get Perplexity API Key
+
+1. **Login and Setup Payment Method**:
+   - Go to [https://www.perplexity.ai/settings/api](https://www.perplexity.ai/settings/api)
+   - Setup Payment method.
+
+2. **Buy API Credits**:
+   - After adding Payment Method, you will see "+ Buy Credits" button.
+   - Click the "+ Buy Credits" button and buy $3 (minimum amount required)
+     
+3. **Generate API Key**:
+   - After buying credit, wait for few minutes and reload the page.
+   - Then you will see $3 credit and "Generate" button under "API Keys" section active
+   - Click the "Generate" button and get your API key
+
+---
+
 ## Usage
 
 1. **Set Your API Key**:
