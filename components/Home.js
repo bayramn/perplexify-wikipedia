@@ -7,28 +7,19 @@ const Home = () => {
   const [apiKey, setApiKey] = useState("");
   const [localApiKey, setLocalApiKey] = useState("");
   const [message, setMessage] = useState(null); // For success/error messages
-  const [showApiKey, setShowApiKey] = useState(false); // Toggle visibility of the API key
 
   // Load the API key from chrome.storage.local on mount
   useEffect(() => {
-    // const localStorageApiKey = localStorage.getItem("apiKey");
-    // console.log("localStorageApiKey: ", localStorageApiKey);
     chrome.storage.local.get("apiKey", (result) => {
       if (result.apiKey) {
         console.log("apiKey already exists: ", result.apiKey);
         setLocalApiKey(result.apiKey);
       }
     });
-
-    // if (localStorageApiKey) {
-    //   console.log("apiKey already exists: ", localStorageApiKey);
-    //   setLocalApiKey(localStorageApiKey);
-    // }
   }, []);
 
   const saveApiKey = () => {
     if (!apiKey) {
-      // setMessage({ type: "error", text: "API key cannot be empty!" });
       setAlert("error", "API key cannot be empty!");
 
       return;
@@ -46,13 +37,9 @@ const Home = () => {
         setAlert("success", "API key saved successfully!");
       }
     });
-
-    //localStorage.setItem("apiKey", apiKey);
-    //setMessage({ type: "success", text: "API key saved successfully!" });
   };
 
   const removeApiKey = () => {
-    // localStorage.removeItem("apiKey");
     chrome.storage.local.remove("apiKey", () => {
       setApiKey("");
       setLocalApiKey("");
@@ -102,7 +89,6 @@ const Home = () => {
       {/* Input Field */}
       {!localApiKey ? (
         <input
-          //type={showApiKey ? "text" : "password"}
           type="text"
           value={apiKey}
           onChange={(e) => setApiKey(e.target.value)}
@@ -118,16 +104,6 @@ const Home = () => {
       ) : (
         <b>{localApiKey.slice(0, 20)}...</b>
       )}
-      {/* Toggle visibility */}
-      {/* <label style={{ marginBottom: "8px", display: "block" }}>
-        <input
-          type="checkbox"
-          checked={showApiKey}
-          onChange={(e) => setShowApiKey(e.target.checked)}
-          style={{ marginRight: "4px" }}
-        />
-        Show API Key
-      </label> */}
 
       {/* Save Button */}
       {!localApiKey && (
