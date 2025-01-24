@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
       <div></div>
-      <h3 style={{ "text-align": "center" }}>WikiPlex</h3>
+      <h3 style={{ "text-align": "center" }}>Perplexify Wikipedia</h3>
 
       <div className="contact">
         <div onClick={handleDiscordClick}>
