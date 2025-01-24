@@ -106,11 +106,11 @@
       const apiPayload = {
         messages: [
           {
-            content: `generate wikipedia article-like for ${articleTitle}, try not use wikipedia as a source.`,
+            content: `generate unbiased wikipedia-like article for ${articleTitle}, try not use wikipedia as a source.`,
             role: "user",
           },
         ],
-        model: "llama-3.1-sonar-large-128k-online",
+        model: "sonar",
         stream: true,
       };
       try {

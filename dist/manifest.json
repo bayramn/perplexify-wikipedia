@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "WikiPlex",
-  "description": "AI article generator for Wikipedia",
+  "name": "Perplexify Wikipedia",
+  "description": "AI article re-generator for Wikipedia",
   "version": "1.0.0",
   "action": {
     "default_icon": {
