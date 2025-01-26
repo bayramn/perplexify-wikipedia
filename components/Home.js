@@ -140,6 +140,24 @@ const Home = () => {
           Remove API Key
         </button>
       )}
+      <div>
+        <p
+          onClick={() => {
+            chrome.runtime.sendMessage({
+              action: "openTab",
+              url: `https://www.perplexity.ai/settings/api`,
+            });
+          }}
+          style={{
+            marginTop: "10em",
+            textDecoration: "underline",
+            color: "blue",
+            cursor: "pointer",
+          }}
+        >
+          Get your API key
+        </p>
+      </div>
     </div>
   );
 };
